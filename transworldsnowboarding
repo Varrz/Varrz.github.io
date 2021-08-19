@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>Transworld Snowboarding</h1>
+</head>
+
+<table style="display:inline">
+
+<tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Bavaria: </font></div></td>
+<td><input type="text" id="productName" name="productName" size=20 maxlength=20></td></tr>
+
+<tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Product Price: </font></div></td>
+<td><input type="text" id="productPrice" name="productPrice" size=20 maxlength="6"></td></tr>
+
+<tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Category Name: </font></div></td>
+<td><input type="text" id="categoryName" name="categoryName" size=20 maxlength="25"></td></tr>
+
+<tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Description: </font></div></td>
+<td><input type="text" id="description" name="description" size=20 maxlength="250"></td></tr>
+
+<tr><td></td><td><div style="text-align:right"><input class="submit" type="submit" name="Submit2" value="Calculate" onclick=></div></td></tr></table>
+
+
+</body>
+</head>
