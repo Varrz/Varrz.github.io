@@ -47,7 +47,8 @@
         }
         //totalSec = totalSec + parseInt(parseString(totalMs).substring(0, table[i].indexOf('.')));
         totalSec = totalSec + Math.floor(totalMs);
-        totalMs = totalMs % 1;
+        totalMs = totalMs + "";
+        totalMs = totalMs.substring(table[i].indexOf('.')+1);
         totalMin = totalMin + Math.floor(totalSec/60);
         totalSec = totalSec % 60;
 
