@@ -47,7 +47,7 @@
         }
         //totalSec = totalSec + parseInt(parseString(totalMs).substring(0, table[i].indexOf('.')));
         totalSec = totalSec + Math.floor(totalMs);
-        totalMs = totalMs.toString();
+        totalMs = totalMs.toFixed(2).toString();
         totalMs = totalMs.substring(totalMs.indexOf('.')+1);
         totalMin = totalMin + Math.floor(totalSec/60);
         totalSec = totalSec % 60;
@@ -55,9 +55,9 @@
         if(totalSec.length == 1){
             totalSec = "0" + totalSec;
         }
-        if(totalMs.length == 1){
-            totalMs = totalMs + "0";
-        }
+        //if(totalMs.length == 1){
+        //    totalMs = totalMs + "0";
+        //}
 
         
         document.getElementById("totalTime").innerHTML = totalMin + ":" + totalSec + "." + totalMs;
