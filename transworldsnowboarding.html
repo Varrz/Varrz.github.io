@@ -30,7 +30,7 @@
 
         var totalMs = 0.00;
         for (var i = 0; i < table.length; i++) {
-            var ms = parseInt(table[i].substring(table[i].indexOf('.'), table[i].length));
+            var ms = parseInt(table[i].substring(table[i].indexOf('.')+1, table[i].length));
             totalMs = totalMs + ms;
             // Do something with element
         }
