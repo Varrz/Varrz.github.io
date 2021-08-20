@@ -51,6 +51,10 @@
         totalMs = totalMs.substring(totalMs.indexOf('.')+1);
         totalMin = totalMin + Math.floor(totalSec/60);
         totalSec = totalSec % 60;
+        totalSec = totalSec.toString();
+        if(totalSec.length == 1){
+            totalSec = "0" + totalSec;
+        }
 
         
         document.getElementById("totalTime").innerHTML = totalMin + ":" + totalSec + "." + totalMs;
