@@ -55,6 +55,9 @@
         if(totalSec.length == 1){
             totalSec = "0" + totalSec;
         }
+        if(totalMs.length == 1){
+            totalMs = totalMs + "0";
+        }
 
         
         document.getElementById("totalTime").innerHTML = totalMin + ":" + totalSec + "." + totalMs;
