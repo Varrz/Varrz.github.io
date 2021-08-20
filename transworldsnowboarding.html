@@ -47,13 +47,13 @@
         }
         //totalSec = totalSec + parseInt(parseString(totalMs).substring(0, table[i].indexOf('.')));
         totalSec = totalSec + Math.floor(totalMs);
-        var printedMs = totalMs + "";
-        printedMs = printedMs.substring(table[i].indexOf('.')+1);
+        //totalMs = totalMs.substring(table[i].indexOf('.')+1);
+        totalMs = totalMs.toFixed(2).substring(table[i].indexOf('.')+1);
         totalMin = totalMin + Math.floor(totalSec/60);
         totalSec = totalSec % 60;
 
         
-        document.getElementById("totalTime").innerHTML = totalMin + ":" + totalSec + "." + printedMs;
+        document.getElementById("totalTime").innerHTML = totalMin + ":" + totalSec + "." + totalMs;
     }
     
 
