@@ -39,13 +39,8 @@
                 totalMs = totalMs + ms;
                 totalSec = totalSec + sec;
                 totalMin = totalMin + min;
-
-
-                //document.getElementById("totalTime").innerHTML = document.getElementById("totalTime").innerHTML + ms;
-                // Do something with element
             }
         }
-        //totalSec = totalSec + parseInt(parseString(totalMs).substring(0, table[i].indexOf('.')));
         totalSec = totalSec + Math.floor(totalMs);
         totalMs = totalMs.toFixed(2).toString();
         totalMs = totalMs.substring(totalMs.indexOf('.')+1);
@@ -55,19 +50,12 @@
         if(totalSec.length == 1){
             totalSec = "0" + totalSec;
         }
-        //if(totalMs.length == 1){
-        //    totalMs = totalMs + "0";
-        //}
 
-        
-        document.getElementById("totalTime").innerHTML = totalMin + ":" + totalSec + "." + totalMs;
+        document.getElementById("totalTime").innerHTML = "Calculated In-Game Time:  " + totalMin + ":" + totalSec + "." + totalMs;
     }
     
 
 </script>
-
-
-
 
 
 <table style="display:inline">
@@ -120,11 +108,11 @@
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 16: </font></div></td>
 <td><input type="text" id="level16" name="" size=12 maxlength=8></td></tr>
 
-<tr><td></td><td><div style="text-align:right"><input class="submit" type="submit" name="Submit2" value="Calculate" onclick=calculate()></div></td></tr>
+<tr><td></td><td><div style="text-align:right"><input class="submit" type="submit" name="Submit2" value="Calculate" onclick=calculate()></div></td></tr></table>
 
-<tr></tr><tr></tr><tr>
-    <h2 id="totalTime" value="Bababooey">TestBaba</h2>
-</tr></table>
+
+<h2 id="totalTime"></h2>
+
 
 
 </body>
