@@ -8,6 +8,8 @@
 
 <script>
 
+    var time = request.getParameter("time");
+
     function calculate(){
         var table = [
             document.getElementById("level1").value,
@@ -34,11 +36,13 @@
             totalMs = totalMs + ms;
             // Do something with element
         }
-        out.print(totalMs + "!!!!!!!");
+        
+        document.getElementById("totalTime").value = totalMs;
     }
     
 
 </script>
+
 
 
 
@@ -93,7 +97,11 @@
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 16: </font></div></td>
 <td><input type="text" id="level16" name="" size=12 maxlength=8></td></tr>
 
-<tr><td></td><td><div style="text-align:right"><input class="submit" type="submit" name="Submit2" value="Calculate" onclick=calculate()></div></td></tr></table>
+<tr><td></td><td><div style="text-align:right"><input class="submit" type="submit" name="Submit2" value="Calculate" onclick=calculate()></div></td></tr>
+
+<tr></tr><tr></tr><tr>
+    <h2 id="totalTime"></h2>
+</tr></table>
 
 
 </body>
