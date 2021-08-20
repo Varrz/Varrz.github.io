@@ -29,16 +29,24 @@
         ];
 
         var totalMs = 0.00;
+        var totalSec = 0;
+        var totalMin = 0;
         for (var i = 0; i < table.length; i++) {
             if(table[i].length>0){
                 var ms = parseFloat(table[i].substring(table[i].indexOf('.')));
+                var sec = parseInt(table[i].substring(table[i].indexOf(':')+1, table[i].indexOf('.')));
+                var min = parseInt(table[i].substring(0, table[i].indexOf(':')));
                 totalMs = totalMs + ms;
+                totalSec = totalSec + sec;
+                totalMin = totalMin + min;
+
+
                 //document.getElementById("totalTime").innerHTML = document.getElementById("totalTime").innerHTML + ms;
                 // Do something with element
             }
         }
         
-        document.getElementById("totalTime").innerHTML = totalMs;
+        document.getElementById("totalTime").innerHTML = totalMin + ":" + totalSec + "." + totalMs;
     }
     
 
