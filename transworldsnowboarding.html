@@ -6,57 +6,94 @@
 </head>
 <body>
 
+<script>
+
+    function calculate(){
+        var table = [
+            document.getElementById("level1").value,
+            document.getElementById("level2").value,
+            document.getElementById("level3").value,
+            document.getElementById("level4").value,
+            document.getElementById("level5").value,
+            document.getElementById("level6").value,
+            document.getElementById("level7").value,
+            document.getElementById("level8").value,
+            document.getElementById("level9").value,
+            document.getElementById("level10").value,
+            document.getElementById("level11").value,
+            document.getElementById("level12").value,
+            document.getElementById("level13").value,
+            document.getElementById("level14").value,
+            document.getElementById("level15").value,
+            document.getElementById("level16").value
+        ];
+
+        var totalMs = 0.00;
+        for (var i = 0; i < table.length; i++) {
+            var ms = table[i].substring(table[i].length - 2);
+            totalMs = totalMs + ms;
+            // Do something with element
+        }
+        out.print(totalMs + "!!!!!!!");
+    }
+    
+
+</script>
+
+
+
+
 <table style="display:inline">
 
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 1: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level1" name="" size=12 maxlength=8></td></tr>
 
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 2: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level2" name="" size=12 maxlength=8></td></tr>
 
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 3: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level3" name="" size=12 maxlength=8></td></tr>
 
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 4: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level4" name="" size=12 maxlength=8></td></tr>
 
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 5: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level5" name="" size=12 maxlength=8></td></tr>
     
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 6: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level6" name="" size=12 maxlength=8></td></tr>
     
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 7: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level7" name="" size=12 maxlength=8></td></tr>
     
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 8: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level8" name="" size=12 maxlength=8></td></tr>
 
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 9: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level9" name="" size=12 maxlength=8></td></tr>
     
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 10: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level10" name="" size=12 maxlength=8></td></tr>
     
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 11: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level11" name="" size=12 maxlength=8></td></tr>
     
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 12: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level12" name="" size=12 maxlength=8></td></tr>
 
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 13: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level13" name="" size=12 maxlength=8></td></tr>
     
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 14: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level14" name="" size=12 maxlength=8></td></tr>
     
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 15: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level15" name="" size=12 maxlength=8></td></tr>
     
 <tr><td><div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Level 16: </font></div></td>
-<td><input type="text" id="" name="" size=12 maxlength=8></td></tr>
+<td><input type="text" id="level16" name="" size=12 maxlength=8></td></tr>
 
-<tr><td></td><td><div style="text-align:right"><input class="submit" type="submit" name="Submit2" value="Calculate" onclick=></div></td></tr></table>
+<tr><td></td><td><div style="text-align:right"><input class="submit" type="submit" name="Submit2" value="Calculate" onclick=calculate()></div></td></tr></table>
 
 
 </body>
