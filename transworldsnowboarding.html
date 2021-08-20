@@ -32,10 +32,11 @@
         for (var i = 0; i < table.length; i++) {
             var ms = parseFloat(table[i].substring(table[i].indexOf('.'), table[i].length));
             totalMs = totalMs + ms;
+            document.getElementById("totalTime").innerHTML = document.getElementById("totalTime").innerHTML + ms;
             // Do something with element
         }
         
-        document.getElementById("totalTime").innerHTML = totalMs;
+        //document.getElementById("totalTime").innerHTML = totalMs;
     }
     
 
