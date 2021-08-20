@@ -33,12 +33,12 @@
             if(table[i].length>0){
                 var ms = parseFloat(table[i].substring(table[i].indexOf('.')));
                 totalMs = totalMs + ms;
-                document.getElementById("totalTime").innerHTML = document.getElementById("totalTime").innerHTML + ms;
+                //document.getElementById("totalTime").innerHTML = document.getElementById("totalTime").innerHTML + ms;
                 // Do something with element
             }
         }
         
-        //document.getElementById("totalTime").innerHTML = totalMs;
+        document.getElementById("totalTime").innerHTML = totalMs;
     }
     
 
